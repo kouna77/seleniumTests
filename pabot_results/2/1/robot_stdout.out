@@ -1,0 +1,106 @@
+==============================================================================
+Tests Recette                                                                 
+==============================================================================
+Tests Recette.Alarmes                                                         
+==============================================================================
+01_Lister des alarmes :: La liste des alarmes                         | FAIL |
+Execution terminated by signal
+
+Also teardown failed:
+Several failures occurred:
+
+1) No browser is open.
+
+2) No browser is open.
+------------------------------------------------------------------------------
+02_Affichage des boutons daction de reassignation et dexport :: Af... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+03_La verification du Workflow_FROM_NEW_TO_INV_NFR_FRD :: Verifica... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+04_La verification du Workflow_FROM_INV_TO_PEN :: Verification du ... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+05.1_La verification du Workflow_FROM_INV_TO_FRD :: Verification d... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+05.2_La verification du Workflow_FROM_INV_TO_NRD :: Verification d... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+05.3_La verification du Workflow_FROM_INV_TO_PEN :: Verification d... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+05.4_La verification du Workflow_FROM_INV_TO_AVL :: Verification d... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+06.1_La verification du Workflow_FROM_PEN_TO_NFR :: Verification d... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+06.2_La verification du Workflow_FROM_PEN_TO_NFR :: Verification d... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+06.3_La verification du Workflow_FROM_PEN_TO_AVL :: Verification d... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+07_La reassignation_alarmes_avec_les_statuts_des_alarmes :: La rea... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+08_La reassignation dune alarme avec statuts avl :: La reassignati... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+09_La verification de lexport en cochant une ou des alarmes :: La ... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+010.1_La verification de lexport en appliquant un filtre :: La ver... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+011_La verification_lexport_en_appliquant_un_filtre_et_en cochant_... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+012_La verification du compteur des alertes dans la liste des alar... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+013_ La consultation dune alarme :: La consultation dune alarme       | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+014_La reassignation_alarme_depuis_la_consultation :: la reassigna... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+015_Affichage du Call Date :: Affichage du Call Date sur les infos... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+016_Visualisation du nombre total de resultats :: Filtre sur les a... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+017_Lister les alarmes SIMBOX :: Lister les alarmes SIMBOX            | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+018_Visualisation_des_colonnes_correspondant_aux_regles_TBSP :: Vi... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+019_Verifier_la_presence_des_colonnes_SENDER_RECEIVER :: Visualise... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+020_Visualiser_les_alarmes_generees_sur_dashboard :: Consulter le ... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+021_Verification_du_taux_de_prise_en_charge_Alarmes :: Verificatio... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+022_Verification_Rubrique_Orange_Money :: Verification de la prese... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+023_Affichage_des_alarmes_SMS_A2P_dans_Alarmes_SMS_A2P :: Affichag... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+024_Non affichage_des_alarmes_SMS_A2P_dans_Alarmes_Simbox :: Non a... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+Tests Recette.Alarmes                                                 | FAIL |
+29 tests, 0 passed, 29 failed
+==============================================================================
+Tests Recette                                                         | FAIL |
+29 tests, 0 passed, 29 failed
+==============================================================================
+Output:  C:\Users\TMP_FALL53278\Desktop\tests-selenium\pabot_results\2\1\output.xml

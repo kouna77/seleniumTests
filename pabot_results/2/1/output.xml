@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.1 (Python 3.8.6 on win32)" generated="20210727 11:19:50.832" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests Recette" source="C:\Users\TMP_FALL53278\Desktop\tests-selenium\Tests_Recette">
+<suite id="s1-s1" name="Alarmes" source="C:\Users\TMP_FALL53278\Desktop\tests-selenium\Tests_Recette\Alarmes.robot">
+<test id="s1-s1-t1" name="01_Lister des alarmes">
+<kw name="Set Variable" library="BuiltIn">
+<var>${TEST NAME}</var>
+<arg>Liste des alarmes</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="FAIL" starttime="20210727 11:19:51.343" endtime="20210727 11:19:51.344"/>
+</kw>
+<kw name="Authentification" library="LoginKeyword">
+<status status="NOT RUN" starttime="20210727 11:19:51.344" endtime="20210727 11:19:51.344"/>
+</kw>
+<kw name="Clic sur le menu Alarms" library="AlarmesKeyword">
+<status status="NOT RUN" starttime="20210727 11:19:51.344" endtime="20210727 11:19:51.344"/>
+</kw>
+<kw name="Clic sur le sous menu Alarms" library="AlarmesKeyword">
+<status status="NOT RUN" starttime="20210727 11:19:51.344" endtime="20210727 11:19:51.344"/>
+</kw>
+<kw name="Verifier les sous menu" library="AlarmesKeyword">
+<status status="NOT RUN" starttime="20210727 11:19:51.344" endtime="20210727 11:19:51.345"/>
+</kw>
+<kw name="Verifier les filtres alarmes" library="AlarmesKeyword">
+<status status="NOT RUN" starttime="20210727 11:19:51.345" endtime="20210727 11:19:51.345"/>
+</kw>
+<kw name="Verifier les boutons reset et filter" library="AlarmesKeyword">
+<status status="NOT RUN" starttime="20210727 11:19:51.345" endtime="20210727 11:19:51.345"/>
+</kw>
+<kw name="Verifier la presence des colonnes" library="AlarmesKeyword">
+<status status="NOT RUN" starttime="20210727 11:19:51.345" endtime="20210727 11:19:51.345"/>
+</kw>
+<kw name="Scroller vers le bas" library="common">
+<status status="NOT RUN" starttime="20210727 11:19:51.345" endtime="20210727 11:19:51.345"/>
+</kw>
+<kw name="End Session" library="common" type="TEARDOWN">
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${TEST_STATUS}'== 'PASS'</arg>
+<arg>Execute Javascript</arg>
+<arg>sauce:job-result=passed</arg>
+<arg>ELSE</arg>
+<arg>execute javascript</arg>
+<arg>sauce:job-result=failed</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>sauce:job-result=failed</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20210727 11:19:51.347" level="INFO">Executing JavaScript:
+sauce:job-result=failed
+Without any arguments.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210727 11:19:51.348" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210727 11:19:51.348" endtime="20210727 11:19:51.348"/>
+</kw>
+<msg timestamp="20210727 11:19:51.351" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20210727 11:19:51.347" endtime="20210727 11:19:51.351"/>
+</kw>
+<status status="FAIL" starttime="20210727 11:19:51.346" endtime="20210727 11:19:51.351"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>sauce:job-name=${TEST NAME}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20210727 11:19:51.352" level="INFO">Executing JavaScript:
+sauce:job-name=01_Lister des alarmes
+Without any arguments.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210727 11:19:51.352" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210727 11:19:51.352" endtime="20210727 11:19:51.352"/>
+</kw>
+<msg timestamp="20210727 11:19:51.353" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20210727 11:19:51.351" endtime="20210727 11:19:51.353"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210727 11:19:51.353" endtime="20210727 11:19:51.353"/>
+</kw>
+<status status="FAIL" starttime="20210727 11:19:51.346" endtime="20210727 11:19:51.354">Several failures occurred:
+
+1) No browser is open.
+
+2) No browser is open.</status>
+</kw>
+<doc>La liste des alarmes</doc>
+<tag>TA_01</tag>
+<status status="FAIL" starttime="20210727 11:19:51.342" endtime="20210727 11:19:51.354">Execution terminated by signal
+
+Also teardown failed:
+Several failures occurred:
+
+1) No browser is open.
+
+2) No browser is open.</status>
+</test>
+<test id="s1-s1-t2" name="02_Affichage des boutons daction de reassignation et dexport">
+<doc>Affichage des boutons daction a lassignation des alarmes</doc>
+<tag>robot:exit</tag>
+<tag>TA_02</tag>
+<status status="FAIL" starttime="20210727 11:19:51.355" endtime="20210727 11:19:51.355">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t3" name="03_La verification du Workflow_FROM_NEW_TO_INV_NFR_FRD">
+<doc>Verification du Workflow depuis la page de liste des alarmes</doc>
+<tag>robot:exit</tag>
+<tag>TA_03</tag>
+<status status="FAIL" starttime="20210727 11:19:51.356" endtime="20210727 11:19:51.357">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t4" name="04_La verification du Workflow_FROM_INV_TO_PEN">
+<doc>Verification du Workflow depuis la page de liste des alarmes</doc>
+<tag>robot:exit</tag>
+<tag>TA_04</tag>
+<status status="FAIL" starttime="20210727 11:19:51.357" endtime="20210727 11:19:51.358">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t5" name="05.1_La verification du Workflow_FROM_INV_TO_FRD">
+<doc>Verification du Workflow_FROM_INV_TO_FRD</doc>
+<tag>robot:exit</tag>
+<tag>TA_05.1</tag>
+<status status="FAIL" starttime="20210727 11:19:51.359" endtime="20210727 11:19:51.360">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t6" name="05.2_La verification du Workflow_FROM_INV_TO_NRD">
+<doc>Verification du Workflow_FROM_INV_TO_NRD</doc>
+<tag>robot:exit</tag>
+<tag>TA_05.2</tag>
+<status status="FAIL" starttime="20210727 11:19:51.360" endtime="20210727 11:19:51.361">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t7" name="05.3_La verification du Workflow_FROM_INV_TO_PEN">
+<doc>Verification du Workflow_FROM_INV_TO_PEN</doc>
+<tag>robot:exit</tag>
+<tag>TA_05.3</tag>
+<status status="FAIL" starttime="20210727 11:19:51.362" endtime="20210727 11:19:51.362">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t8" name="05.4_La verification du Workflow_FROM_INV_TO_AVL">
+<doc>Verification du Workflow_FROM_INV_TO_AVL</doc>
+<tag>robot:exit</tag>
+<tag>TA_05.3</tag>
+<status status="FAIL" starttime="20210727 11:19:51.363" endtime="20210727 11:19:51.364">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t9" name="06.1_La verification du Workflow_FROM_PEN_TO_NFR">
+<doc>Verification du Workflow_FROM_PEN_TO_NFR</doc>
+<tag>robot:exit</tag>
+<tag>TA_06.1</tag>
+<status status="FAIL" starttime="20210727 11:19:51.364" endtime="20210727 11:19:51.365">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t10" name="06.2_La verification du Workflow_FROM_PEN_TO_NFR">
+<doc>Verification du Workflow_FROM_PEN_TO_FRD</doc>
+<tag>robot:exit</tag>
+<tag>TA_06.2</tag>
+<status status="FAIL" starttime="20210727 11:19:51.365" endtime="20210727 11:19:51.366">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t11" name="06.3_La verification du Workflow_FROM_PEN_TO_AVL">
+<doc>Verification du Workflow_FROM_PEN_TO_AVL</doc>
+<tag>robot:exit</tag>
+<tag>TA_06.3</tag>
+<status status="FAIL" starttime="20210727 11:19:51.367" endtime="20210727 11:19:51.367">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t12" name="07_La reassignation_alarmes_avec_les_statuts_des_alarmes">
+<doc>La reassignation depuis la page de la liste des alarmes</doc>
+<tag>robot:exit</tag>
+<tag>TA_07</tag>
+<status status="FAIL" starttime="20210727 11:19:51.368" endtime="20210727 11:19:51.369">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t13" name="08_La reassignation dune alarme avec statuts avl">
+<doc>La reassignation depuis la page de liste des alarmes en prenant en compte le statuts avl</doc>
+<tag>robot:exit</tag>
+<tag>TA_08</tag>
+<status status="FAIL" starttime="20210727 11:19:51.369" endtime="20210727 11:19:51.370">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t14" name="09_La verification de lexport en cochant une ou des alarmes">
+<doc>La verification de lexport en appliquant les filtres</doc>
+<tag>robot:exit</tag>
+<tag>TA_09</tag>
+<status status="FAIL" starttime="20210727 11:19:51.371" endtime="20210727 11:19:51.371">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t15" name="010.1_La verification de lexport en appliquant un filtre">
+<doc>La verification de lexport en appliquant un filtre/ en cochant une ou des alarmes/ en combinant les deux_2</doc>
+<tag>robot:exit</tag>
+<tag>TA_10</tag>
+<status status="FAIL" starttime="20210727 11:19:51.372" endtime="20210727 11:19:51.373">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t16" name="011_La verification_lexport_en_appliquant_un_filtre_et_en cochant_une_alarme">
+<doc>La verification de lexport en appliquant un filtre/ en cochant une ou des alarmes/ en combinant les deux_3</doc>
+<tag>robot:exit</tag>
+<tag>TA_011</tag>
+<status status="FAIL" starttime="20210727 11:19:51.373" endtime="20210727 11:19:51.374">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t17" name="012_La verification du compteur des alertes dans la liste des alarmes">
+<doc>La verification du compteur des alertes dans la liste des alarmes et le nombre reel dalerte a la consul_alarme</doc>
+<tag>robot:exit</tag>
+<tag>TA_12</tag>
+<status status="FAIL" starttime="20210727 11:19:51.375" endtime="20210727 11:19:51.376">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t18" name="013_ La consultation dune alarme">
+<doc>La consultation dune alarme</doc>
+<tag>robot:exit</tag>
+<tag>TA_013</tag>
+<status status="FAIL" starttime="20210727 11:19:51.376" endtime="20210727 11:19:51.377">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t19" name="014_La reassignation_alarme_depuis_la_consultation">
+<doc>la reassignation dune alarme depuis la consultation</doc>
+<tag>robot:exit</tag>
+<tag>TA_014</tag>
+<status status="FAIL" starttime="20210727 11:19:51.378" endtime="20210727 11:19:51.378">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t20" name="015_Affichage du Call Date">
+<doc>Affichage du Call Date sur les infos CDR de lAlerte de lAlarme Simbox</doc>
+<tag>robot:exit</tag>
+<tag>TA_015</tag>
+<status status="FAIL" starttime="20210727 11:19:51.379" endtime="20210727 11:19:51.380">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t21" name="016_Visualisation du nombre total de resultats">
+<doc>Filtre sur les alarmes: Visualisation du nombre total de resultats</doc>
+<tag>robot:exit</tag>
+<tag>TA_016</tag>
+<status status="FAIL" starttime="20210727 11:19:51.380" endtime="20210727 11:19:51.381">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t22" name="017_Lister les alarmes SIMBOX">
+<doc>Lister les alarmes SIMBOX</doc>
+<tag>robot:exit</tag>
+<tag>TA_017</tag>
+<status status="FAIL" starttime="20210727 11:19:51.381" endtime="20210727 11:19:51.382">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t23" name="018_Visualisation_des_colonnes_correspondant_aux_regles_TBSP">
+<doc>Visualisation des colonnes correspondant aux regles de type TBSP dans la page des alertes</doc>
+<tag>robot:exit</tag>
+<tag>TA_018</tag>
+<status status="FAIL" starttime="20210727 11:19:51.383" endtime="20210727 11:19:51.384">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t24" name="019_Verifier_la_presence_des_colonnes_SENDER_RECEIVER">
+<doc>Visualiser la presence des colonnes SENDER et RECEIVER les cdrs</doc>
+<tag>robot:exit</tag>
+<tag>TA_019</tag>
+<status status="FAIL" starttime="20210727 11:19:51.384" endtime="20210727 11:19:51.385">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t25" name="020_Visualiser_les_alarmes_generees_sur_dashboard">
+<doc>Consulter le status des alarmes generees sur le dashboard</doc>
+<tag>robot:exit</tag>
+<tag>TA_020</tag>
+<status status="FAIL" starttime="20210727 11:19:51.385" endtime="20210727 11:19:51.386">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t26" name="021_Verification_du_taux_de_prise_en_charge_Alarmes">
+<doc>Verification du taux de prise en charge Alarmes dans le Dashboard</doc>
+<tag>robot:exit</tag>
+<tag>TA_021</tag>
+<status status="FAIL" starttime="20210727 11:19:51.387" endtime="20210727 11:19:51.387">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t27" name="022_Verification_Rubrique_Orange_Money">
+<doc>Verification de la presence du sous menu Orange Money</doc>
+<tag>robot:exit</tag>
+<tag>TA_022</tag>
+<status status="FAIL" starttime="20210727 11:19:51.388" endtime="20210727 11:19:51.389">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t28" name="023_Affichage_des_alarmes_SMS_A2P_dans_Alarmes_SMS_A2P">
+<doc>Affichage des alarmes SM2 A2P dans la page Alarmes SMS A2P</doc>
+<tag>robot:exit</tag>
+<tag>TA_023</tag>
+<status status="FAIL" starttime="20210727 11:19:51.389" endtime="20210727 11:19:51.390">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s1-t29" name="024_Non affichage_des_alarmes_SMS_A2P_dans_Alarmes_Simbox">
+<doc>Non affichage des alarmes SMS A2P dans la page Alarmes Simbox</doc>
+<tag>robot:exit</tag>
+<tag>TA_024</tag>
+<status status="FAIL" starttime="20210727 11:19:51.390" endtime="20210727 11:19:51.391">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20210727 11:19:50.880" endtime="20210727 11:19:51.393"/>
+</suite>
+<status status="FAIL" starttime="20210727 11:19:50.835" endtime="20210727 11:19:51.395"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="29" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="0" fail="28" skip="0">robot:exit</stat>
+<stat pass="0" fail="1" skip="0">TA_01</stat>
+<stat pass="0" fail="1" skip="0">TA_011</stat>
+<stat pass="0" fail="1" skip="0">TA_013</stat>
+<stat pass="0" fail="1" skip="0">TA_014</stat>
+<stat pass="0" fail="1" skip="0">TA_015</stat>
+<stat pass="0" fail="1" skip="0">TA_016</stat>
+<stat pass="0" fail="1" skip="0">TA_017</stat>
+<stat pass="0" fail="1" skip="0">TA_018</stat>
+<stat pass="0" fail="1" skip="0">TA_019</stat>
+<stat pass="0" fail="1" skip="0">TA_02</stat>
+<stat pass="0" fail="1" skip="0">TA_020</stat>
+<stat pass="0" fail="1" skip="0">TA_021</stat>
+<stat pass="0" fail="1" skip="0">TA_022</stat>
+<stat pass="0" fail="1" skip="0">TA_023</stat>
+<stat pass="0" fail="1" skip="0">TA_024</stat>
+<stat pass="0" fail="1" skip="0">TA_03</stat>
+<stat pass="0" fail="1" skip="0">TA_04</stat>
+<stat pass="0" fail="1" skip="0">TA_05.1</stat>
+<stat pass="0" fail="1" skip="0">TA_05.2</stat>
+<stat pass="0" fail="2" skip="0">TA_05.3</stat>
+<stat pass="0" fail="1" skip="0">TA_06.1</stat>
+<stat pass="0" fail="1" skip="0">TA_06.2</stat>
+<stat pass="0" fail="1" skip="0">TA_06.3</stat>
+<stat pass="0" fail="1" skip="0">TA_07</stat>
+<stat pass="0" fail="1" skip="0">TA_08</stat>
+<stat pass="0" fail="1" skip="0">TA_09</stat>
+<stat pass="0" fail="1" skip="0">TA_10</stat>
+<stat pass="0" fail="1" skip="0">TA_12</stat>
+</tag>
+<suite>
+<stat pass="0" fail="29" skip="0" id="s1" name="Tests Recette">Tests Recette</stat>
+<stat pass="0" fail="29" skip="0" id="s1-s1" name="Alarmes">Tests Recette.Alarmes</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

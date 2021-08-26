@@ -1,0 +1,31 @@
+==============================================================================
+Tests Recette                                                                 
+==============================================================================
+Tests Recette.Alertes                                                         
+==============================================================================
+001_La consultation dune alerte avec verification colonnes :: La c... | FAIL |
+Execution terminated by signal
+
+Also teardown failed:
+Several failures occurred:
+
+1) No browser is open.
+
+2) No browser is open.
+------------------------------------------------------------------------------
+002_Visualiser les donnees sur le compteur balance par liste de co... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+03_Recuperer les alertes par scope :: Filtrer les alertes par scope   | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+004_Exporter_lensemble_des colonnes_des_cdrs_dune_alerte_des_detec... | FAIL |
+Test execution stopped due to a fatal error.
+------------------------------------------------------------------------------
+Tests Recette.Alertes                                                 | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+Tests Recette                                                         | FAIL |
+4 tests, 0 passed, 4 failed
+==============================================================================
+Output:  C:\Users\TMP_FALL53278\Desktop\tests-selenium\pabot_results\1\2\output.xml

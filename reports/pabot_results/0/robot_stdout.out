@@ -1,0 +1,22 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.Tests                                                                   
+==============================================================================
+Tests.Tests.Valid Login :: A test suite with a single test for valid login.   
+==============================================================================
+Valid Login with Standard User                                        | PASS |
+------------------------------------------------------------------------------
+Tests.Tests.Valid Login :: A test suite with a single test for val... | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Tests.Tests                                                           | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  /opt/robotframework/reports/pabot_results/0/output.xml

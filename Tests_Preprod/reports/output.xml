@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.2 on linux)" generated="20210422 13:25:44.145" rpa="false">
+<suite id="s1" name="Tests" source="/opt/robotframework/tests">
+<suite id="s1-s1" name="Valid Login" source="/opt/robotframework/tests/valid_login.robot">
+<test id="s1-s1-t1" name="Valid Login with Standard User">
+<kw name="Open login page" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>http://rec-radar.orange-sonatel.com:8080/</arg>
+<arg>browser=${BrowserName}</arg>
+<arg>remote_url=${remote_url}</arg>
+<arg>desired_capabilities=${capabilities}</arg>
+</arguments>
+<msg timestamp="20210422 13:25:44.548" level="FAIL">Variable '${BrowserName}' not found.</msg>
+<status status="FAIL" starttime="20210422 13:25:44.547" endtime="20210422 13:25:44.548"></status>
+</kw>
+<status status="FAIL" starttime="20210422 13:25:44.546" endtime="20210422 13:25:44.548"></status>
+</kw>
+<kw name="End Session" library="resource" type="teardown">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${TEST_STATUS}'== 'PASS'</arg>
+<arg>Execute Javascript</arg>
+<arg>sauce:job-result=passed</arg>
+<arg>ELSE</arg>
+<arg>Execute Javascript</arg>
+<arg>sauce:job-result=failed</arg>
+</arguments>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>sauce:job-result=failed</arg>
+</arguments>
+<msg timestamp="20210422 13:25:44.550" level="INFO">Executing JavaScript:
+sauce:job-result=failed
+Without any arguments.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210422 13:25:44.551" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210422 13:25:44.551" endtime="20210422 13:25:44.551"></status>
+</kw>
+<msg timestamp="20210422 13:25:44.557" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20210422 13:25:44.550" endtime="20210422 13:25:44.557"></status>
+</kw>
+<status status="FAIL" starttime="20210422 13:25:44.549" endtime="20210422 13:25:44.557"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210422 13:25:44.557" endtime="20210422 13:25:44.558"></status>
+</kw>
+<status status="FAIL" starttime="20210422 13:25:44.549" endtime="20210422 13:25:44.558">No browser is open.</status>
+</kw>
+<status status="FAIL" starttime="20210422 13:25:44.545" endtime="20210422 13:25:44.558" critical="yes">Variable '${BrowserName}' not found.
+
+Also teardown failed:
+No browser is open.</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" starttime="20210422 13:25:44.189" endtime="20210422 13:25:44.559"></status>
+</suite>
+<status status="FAIL" starttime="20210422 13:25:44.147" endtime="20210422 13:25:44.560"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Valid Login">Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210422 13:25:44.540" level="ERROR">Error in file '/opt/robotframework/tests/resource.robot': Setting variable '${browser}' failed: Variable '${browserName}' not found.</msg>
+<msg timestamp="20210422 13:25:44.541" level="ERROR">Error in file '/opt/robotframework/tests/resource.robot': Setting variable '@{_tmp}' failed: Variable '${browserName}' not found.</msg>
+<msg timestamp="20210422 13:25:44.542" level="ERROR">Error in file '/opt/robotframework/tests/resource.robot': Setting variable '${capabilities}' failed: Variable '${_tmp}' not found. Did you mean:
+    ${TEMPDIR}</msg>
+</errors>
+</robot>

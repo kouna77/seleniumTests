@@ -1,0 +1,9 @@
+datasources:41fbced75e8d4d08a5cda00e924d67be60841333
+commandlineoptions:489484fa9f26b2bdaf82bdb12057b50fe4a1bd82
+suitesfrom:no-suites-from-option
+file:aa4425e8eb704824ae84d0a9f564331007c73dee
+--suite Tests Recette.Alarmes
+--suite Tests Recette.Alertes
+--suite Tests Recette.Login
+--suite Tests Recette.Rules
+--suite Tests Recette.Whitelists
